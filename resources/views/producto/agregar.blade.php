@@ -31,18 +31,13 @@
   
 
   <div class="form-group">
-    <label for="">Precio:</label>
-    <input type="number" class="form-control" name="precio" step=".01">
-  </div>
-
-  <div class="form-group">
     <label for="">stock</label>
     <input type="number" class="form-control" name="stock">
   </div>
 
   <div class="form-group">
-    <label for="">Imagen:</label>
-    <input type="file" class="form-control-file" name="imagen">
+    <label for="">Medida:</label>
+    <input type="text" class="form-control" name="medida">
   </div>
 
   <button class="btn btn-primary" type="submit">Agregar</button>

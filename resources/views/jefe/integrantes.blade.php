@@ -13,7 +13,12 @@
                 </div>
 
                 <div class="card-body">
-                   
+                   <label>Tipos de usuario <br>
+                          1-Jefe<br>
+                          2-Administrador <br>
+                          3-Usuario  <br>
+                   </label>
+                
                     @if(session('info'))
                    <div class="alert alert-success">
                         {{
@@ -27,14 +32,34 @@
             
                               <th >id</th>
                               <th >nombre</th>
-                              <th >rol</th>
-                              <th >Descripcion</th>
-                              <th >Precio</th>
-                              <th >Stock</th>
-                              <th >Imagen</th>
+                              <th >correo</th>
+                              <th>Tipo de usuario</th>
                             </tr>
                           </thead>
                          
+                         <tbody>
+                              @foreach($usuario as $User)
+                             <tr class="thead-light">
+                                 
+                                <td>
+                                    {{$User->id}}
+                                </td>
+
+                                 <td>
+                                    {{$User->name}}
+                                </td>
+
+                                 <td>
+                                    {{$User->email}}
+                                </td>
+
+                                 <td>
+                                    {{$User->tipo}}
+                                </td>
+
+                             </tr>
+                                @endforeach
+                         </tbody>
                         </table>
                 </div>
             </div>

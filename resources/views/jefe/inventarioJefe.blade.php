@@ -6,10 +6,8 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header">
-                   <a class="btn btn-primary" href="{{route('jefe.index')}}">solicitudes</a>
+                    <a class="btn btn-primary" href="{{route('jefe.index')}}">solicitudes</a>
                     <a class="btn btn-primary" href="{{route('inv')}}">Inventario</a>
-            
-                    <a class="btn btn-primary" href="{{route('int')}}">Integrantes</a>
                 </div>
 
                 <div class="card-body">
@@ -31,7 +29,7 @@
                               <th >Descripcion</th>
                               <th >Precio</th>
                               <th >Stock</th>
-                              <th >Imagen</th>
+                              <th >Medida</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -52,15 +50,12 @@
                                  <td>
                                     {{$producto->descripcion}}
                                 </td>
-                                 <td>
-                                    {{$producto->precio}}
-                                </td>
+                                 
                                 <td>
                                     {{$producto->stock}}
                                 </td>
                                 <td>
-         <img src="{{ asset('storage').'/'.$producto->imagen}}" alt="" width="100">
-                                    
+                                    {{$producto->medida}}
                                 </td>
     
                                  

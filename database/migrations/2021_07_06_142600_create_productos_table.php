@@ -19,9 +19,8 @@ class CreateProductosTable extends Migration
             $table->text('responsable');
             $table->text('nombre');
             $table->text('descripcion')->nullable();
-            $table->double('precio',8,2);
             $table->integer('stock');
-            $table->string('imagen')->nullable();
+            $table->text('medida');
             $table->timestamps();
         });
     }

@@ -27,10 +27,9 @@
                               <th >Responsable</th>
                               <th >Producto</th>
                               <th >Descripcion</th>
-                              <th >Precio</th>
                               <th >Stock</th>
-                              <th >Imagen</th>
-                              <th >accion</th>
+                              <th >Medida</th>
+                              <th >Accion</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -51,15 +50,12 @@
                                  <td>
                                     {{$producto->descripcion}}
                                 </td>
-                                 <td>
-                                    {{$producto->precio}}
-                                </td>
+                        
                                 <td>
                                     {{$producto->stock}}
                                 </td>
                                 <td>
-         <img src="{{ asset('storage').'/'.$producto->imagen}}" alt="" width="100">
-                                    
+                                    {{$producto->medida}}
                                 </td>
                                 <td>
         <a href="{{route('editar.producto', $producto->id)}}" class="btn btn-info btn-sm">Editar</a>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Producto;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Middleware\Jefe;
 
@@ -33,7 +34,8 @@ class JefeController extends Controller
        }
 
     public function integrantes(){
-        return view('jefe.integrantes');
+        $usuario = User::orderBy('created_at','desc')->get();
+        return view('jefe.integrantes', compact('usuario'));
        }
           
     /**

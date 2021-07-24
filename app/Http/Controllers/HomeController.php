@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Producto;
-use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -43,25 +42,21 @@ class HomeController extends Controller
         $newProducto->responsable = $request->input('responsable');
         $newProducto->nombre = $request->input('nombre');
         $newProducto->descripcion = $request->input('descripcion');
-        $newProducto->precio=$request->input('precio');
         $newProducto->stock=$request->input('stock');
+        $newProducto->medida=$request->input('medida');
         //$newProducto->imagen=$request->input('imagen');
-
-        if($request->hasfile('imagen')){
-            $newProducto['imagen']=$request->file('imagen')->store('uploads','public');
-        }
         $newProducto->save();
         return redirect()->route('home')->with('info','Se agrego producto al inventario');
     }
+
     public function eliminar($id){
     //return $id;
         $producto = Producto::findOrFail($id);
         $producto->delete();
         //return $producto;
-        Storage::delete('public/'.$producto->imagen);
         return redirect()->route('home')->with('info','Se elimino el producto');
-
     }
+
     public function editar($id){
         $producto = Producto::findOrFail($id);
         return view('producto.editar', compact('producto'));
@@ -77,15 +72,10 @@ class HomeController extends Controller
         $producto->codigo = $request->input('codigo');
         $producto->nombre = $request->input('nombre');
         $producto->descripcion = $request->input('descripcion');
-        $producto->precio=$request->input('precio');
         $producto->stock=$request->input('stock');
+        $producto->medida = $request->input('medida');
 
-         if($request->hasfile('imagen')){
-            $producto = Producto::findOrFail($id);
-            Storage::delete('public/'.$producto->imagen);
-            $producto['imagen']=$request->file('imagen')->store('uploads','public');
-        }
         $producto->save();
-        return redirect()->route('home')->with('info','Se actualizo producto al inventario');
+        return redirect()->route('home')->with('info','Se actualizo producto alinventario');
     }
 }
