@@ -25,9 +25,10 @@ Route::get('products/{id}/edit',[App\Http\Controllers\HomeController::class, 'ed
 Route::put('products/{id}',[App\Http\Controllers\HomeController::class, 'actualizar'])->name('actualizar.producto');
 
 
-
-Route::resource('/jefe',JefeController::class);
-Route::get('inventario', [App\Http\Controllers\JefeController::class, 'inventario'])->name('inv');
+//Route::resource('/jefe',JefeController::class);
+Route::get('jefe', [App\Http\Controllers\JefeController::class, 'index'])->name('inv');
 Route::get('integrantes', [App\Http\Controllers\JefeController::class, 'integrantes'])->name('int');
+
+Route::get('Asignacion-Rol', [App\Http\Controllers\JefeController::class, 'asignarRol'])->name('AsigRol');
 
 Route::resource('/usuario',UserController::class);

@@ -6,7 +6,7 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header">
-                    <a class="btn btn-primary" href="{{route('jefe.index')}}">solicitudes</a>
+        
                     <a class="btn btn-primary" href="{{route('inv')}}">Inventario</a>
             
                     <a class="btn btn-primary" href="{{route('int')}}">Integrantes</a>
@@ -26,17 +26,43 @@
                             <tr>
             
                               <th >Codigo</th>
-                              <th >Responsable</th>
-                              <th >Producto</th>
-                              <th >Descripcion</th>
-                              <th >Precio</th>
-                              <th >Stock</th>
-                              <th >Imagen</th>
-                              <th >accion</th>
+                              <th> Reponsable</th>
+                              <th> Producto</th>
+                              <th> Descripcion </th>
+                              <th> Stock </th>
+                              <th> Medida </th>
                             </tr>
                           </thead>
                          
-                         
+                             <tbody>
+                            @foreach($products as $producto)
+                            <tr>
+
+                                <td>
+                                    {{$producto->codigo}}
+                                </td>
+
+                                  <td>
+                                    {{$producto->responsable}}
+                                  </td>
+
+                                 <td>
+                                    {{$producto->nombre}}
+                                </td>
+                                 <td>
+                                    {{$producto->descripcion}}
+                                </td>
+                        
+                                <td>
+                                    {{$producto->stock}}
+                                </td>
+                                <td>
+                                    {{$producto->medida}}
+                                </td>
+                                 
+                            </tr>
+                            @endforeach
+                          </tbody>
                         </table>
                 </div>
             </div>

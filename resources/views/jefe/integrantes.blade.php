@@ -6,7 +6,7 @@
         <div class="col-md-11">
             <div class="card">
                 <div class="card-header">
-                <a class="btn btn-primary" href="{{route('jefe.index')}}">solicitudes</a>
+        
                     <a class="btn btn-primary" href="{{route('inv')}}">Inventario</a>
             
                     <a class="btn btn-primary" href="{{route('int')}}">Integrantes</a>
@@ -34,6 +34,7 @@
                               <th >nombre</th>
                               <th >correo</th>
                               <th>Tipo de usuario</th>
+                              <th>Asignar rol</th>
                             </tr>
                           </thead>
                          
@@ -57,6 +58,9 @@
                                     {{$User->tipo}}
                                 </td>
 
+                                <td>
+                                    <a href="{{route('AsigRol', $User->id)}}" class="btn btn-info btn-sm">Editar</a>
+                                </td>
                              </tr>
                                 @endforeach
                          </tbody>

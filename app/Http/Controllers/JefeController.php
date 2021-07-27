@@ -24,8 +24,8 @@ class JefeController extends Controller
 
     public function index()
     {
-        
-        return view('jefe.homeJefe');
+        $products = Producto::orderBy('created_at','desc')->get();
+        return view('jefe.homeJefe',compact('products'));
     }
 
     public function inventario(){
@@ -37,6 +37,11 @@ class JefeController extends Controller
         $usuario = User::orderBy('created_at','desc')->get();
         return view('jefe.integrantes', compact('usuario'));
        }
+
+    public function asignarRol(){
+
+        return view('jefe.asignarRol');
+    }   
           
     /**
      * Show the form for creating a new resource.
