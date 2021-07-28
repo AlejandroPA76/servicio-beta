@@ -29,6 +29,6 @@ Route::put('products/{id}',[App\Http\Controllers\HomeController::class, 'actuali
 Route::get('jefe', [App\Http\Controllers\JefeController::class, 'index'])->name('inv');
 Route::get('integrantes', [App\Http\Controllers\JefeController::class, 'integrantes'])->name('int');
 
-Route::get('Asignacion-Rol', [App\Http\Controllers\JefeController::class, 'asignarRol'])->name('AsigRol');
+Route::put('Asignacion-Rol/{id}', [App\Http\Controllers\JefeController::class, 'asignarRol'])->name('AsigRol');
 
 Route::resource('/usuario',UserController::class);

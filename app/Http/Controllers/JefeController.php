@@ -38,11 +38,13 @@ class JefeController extends Controller
         return view('jefe.integrantes', compact('usuario'));
        }
 
-    public function asignarRol(){
-
-        return view('jefe.asignarRol');
+    public function asignarRol(Request $request, $id){
+        $usuario = User::findOrFail($id);
+        $usuario->tipo = $request->input('rol');
+        $usuario->save();
+        return redirect()->route('int')->with('info','Se actualizo los permisos al usuario');
     }   
-          
+
     /**
      * Show the form for creating a new resource.
      *

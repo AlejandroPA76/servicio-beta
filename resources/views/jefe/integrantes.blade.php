@@ -59,7 +59,19 @@
                                 </td>
 
                                 <td>
-                                    <a href="{{route('AsigRol', $User->id)}}" class="btn btn-info btn-sm">Editar</a>
+                                    <form action="{{route('AsigRol',$User->id)}}" method="POST" >
+                                         @method('put')
+                                        @csrf   
+                               <select name="rol" id="rol" onchange="this.form.submit()">
+                                             <option value="">Seleccione...</option>
+                                            <option value="1">Jefe</option>
+                                            <option value="2">Adminisatrdor</option>
+                                            <option value="3">Usuario</option>
+                                        </select> 
+
+
+                                    </form>
+                           
                                 </td>
                              </tr>
                                 @endforeach
