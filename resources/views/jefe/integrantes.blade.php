@@ -59,16 +59,17 @@
                                 </td>
 
                                 <td>
+
                                     <form action="{{route('AsigRol',$User->id)}}" method="POST" >
                                          @method('put')
                                         @csrf   
-                               <select name="rol" id="rol" onchange="this.form.submit()">
-                                             <option value="">Seleccione...</option>
-                                            <option value="1">Jefe</option>
-                                            <option value="2">Adminisatrdor</option>
+                               <select name="rol" id="rol" onchange="if(confirm('Seguro que deseas asignar ese rol?')){this.form.submit()}else{return}">
+                                            <option selected hidden>Seleccionar</option>
+                                            <option value="1" >Jefe</option>
+                                            <option value="2">Administrador</option>
                                             <option value="3">Usuario</option>
                                         </select> 
-
+                                    
 
                                     </form>
                            
