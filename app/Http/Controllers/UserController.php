@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Producto;
 use Illuminate\Http\Middleware\Usuario;
 
 class UserController extends Controller
@@ -21,7 +22,8 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('usuario.homeUsuario');
+        $products = Producto::orderBy('created_at','desc')->get();
+        return view('usuario.homeUsuario',compact('products'));
     }
 
     /**
