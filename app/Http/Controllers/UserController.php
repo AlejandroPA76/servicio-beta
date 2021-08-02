@@ -20,10 +20,17 @@ class UserController extends Controller
     }
 
 
-    public function index()
+    public function index(Request $request)
     {
-        $products = Producto::orderBy('created_at','desc')->get();
-        return view('usuario.homeUsuario',compact('products'));
+        if($request){
+            $query = trim($request->get('search'));
+            $products = Producto::where('codigo','LIKE', '%'. $query . '%')
+            ->orderBy('created_at','desc')
+            ->get();
+
+        }
+        //$products = Producto::Search($request->codigo)->orderBy('created_at','desc')->get();
+        return view('usuario.homeUsuario',compact('products'),['search'=>$query]);
     }
 
     /**
