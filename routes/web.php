@@ -15,6 +15,8 @@ Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name(
 
 Route::get('agregar/producto',[App\Http\Controllers\HomeController::class, 'agregar'])->name('agregar.producto');
 
+Route::get('solicitar/producto',[App\Http\Controllers\HomeController::class, 'solicitar'])->name('solicitar.producto');
+
 //si se esta usando
 Route::post('almacenar',[App\Http\Controllers\HomeController::class, 'almacenar'])->name('almacenar.producto');
 

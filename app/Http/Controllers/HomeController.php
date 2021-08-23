@@ -35,6 +35,11 @@ class HomeController extends Controller
         return view('producto.agregar');
     } 
 
+     public function solicitar(){
+        return view('producto.solicitar');
+    } 
+
+
     public function almacenar(Request $request){
 
         $newProducto = new Producto;
