@@ -36,6 +36,7 @@ class HomeController extends Controller
     } 
 
      public function solicitar(){
+         $products = Producto::orderBy('created_at','desc')->get();
         return view('producto.solicitar');
     } 
 

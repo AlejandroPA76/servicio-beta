@@ -17,6 +17,8 @@ Route::get('agregar/producto',[App\Http\Controllers\HomeController::class, 'agre
 
 Route::get('solicitar/producto',[App\Http\Controllers\HomeController::class, 'solicitar'])->name('solicitar.producto');
 
+Route::get('pdf/producto',[App\Http\Controllers\pdfController::class, 'pdf'])->name('descargar.solicitud');
+
 //si se esta usando
 Route::post('almacenar',[App\Http\Controllers\HomeController::class, 'almacenar'])->name('almacenar.producto');
 

@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
         {{--se tiene que colocar un enctype porque vamos a colocar una imagen--}}
-<form action="{{route('almacenar.producto')}}" method="POST" enctype="multipart/form-data">
+<form action="{{route('descargar.solicitud')}}" method="GET">
   @csrf
 
   <div class="form-group">
@@ -29,6 +29,7 @@
     <label for="">Nombre del producto:</label>
     <input type="text" class="form-control" name="nombre">
   </div>
+
 
 
   <div class="form-group">
