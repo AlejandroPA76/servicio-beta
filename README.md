@@ -1,62 +1,34 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+### **Sistema de inventario servicio social.**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+##### Como parte de nuestro servicio social se solicitó realizar un sistema web para el departamento de papelería de la secretaria de honestidad pública.
 
-## About Laravel
+___
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+##### Menú de inicio de la página:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<img src="https://lh3.googleusercontent.com/IIvjx1svUVSYVRhk6oA3eCJhA5zWe9rEZuGrAK6KFXctUGBMdjYYqOOOJvRBwWlrVTJLWsUINo-bJOsus4EtNLb7pMFJad99-yOOi4Dn5X_zX1Xm-26MNqK5d-7b8P5X3SdYt8GwxU3qtm3z98vwwMmUuKp2G5CG7Rt12rKGrTMcPpN6wa8kNb9jZH-oyp0WaWCfRUdr6rv8vh41syIk0l-UJGTCZrkEjw7Ji850A44n7OMcEtgYhQ69S4Skcu58AIp6MqTxYxGORaNDsDwkI73J0485iuZX49C44xrbmG9xgsM2OMmg1yNRgUxqVnT3yRLcCsUGijIxdgz-dcS4T6jpXUA0ufgb6wJzGJYR8mJ4JZCeZ9-i8VWVeNt6WTptegxiIiC90wDD3vhLd3AyXTUSgHtjRHDDrlW-z6ycj-8KVX1S7oadLM-QYl1at-3ofAhK81BniOA47q9af8lWck3OLiQ-93M8QrRKPFuYbgpq0zNAik7EfSt2dlydHVyK7FUtukmdCMjYwkBiPbbMGuxZ5ZDHbMxuU0szckwaXHC8tm0vM_2MYv5SmwAGXdpNfapwTdizLB751z5uoYZf6trHYqYs2ZprGVAQdhYN2GAvvMxn0h1A4YQnGBauTa7qchXZnB7vVCGO48CcDnBP9cabfTdXUJkj59USOggj-pfPGf8V8307AuTtg9ektuHRj-6h8Du95nQkSO5v2OiwNCGa_ggdCxenYTeVvdWoYS2v-RV0IzpWY1kCtKbU=w1197-h572-no?authuser=0" alt="JuveR" width="700px" >
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+##### Menú Registrarse:
 
-## Learning Laravel
+###### Aquí los usuarios pueden registrarse y obtendrán el rol de usuario. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<img src="https://lh3.googleusercontent.com/erKZjvL66PyTANifvrFFkIzl0HgUIUR-xNoLu4ffZl6IsemCfNsFObK8cGc4huGVsh-bmkV-dh44t1o8PzQbntyUR2CUjH7YyYQ-cHgQzD69riL8zC3jlDaO9SF0DdBODnsT2kVwEZxg_cl1HsfkeO0_uv7ewWUIe99GbwzGSda6rAmxAPPVaU6lQFbbRNi-b9SPPX8Eqt29CNI_8TErRJP-pKC96V6SqvoYgAozcjJivamowdCpvcvCmr2AIPsJgz_a_nM7o734IhYA2MCsdjpk9oN2qUFKs9NqApTXgBwlhElK9SWZVjya9a5YZJ8ytvmzmLMdJK50Tx_tEs5hWSFcu1miF8gwl3d2Ey-keXWM9bJmePRD8HgfY2Oy99ubzSJ1iW00R-KhLGA2s0YDHAV0Vnfzkz9SFmpbBL5uFjGX2A5oPU5mMbbd8qYceFOMtqyCigw-uG0_LvDn8_lnoPbOaE4ukwcNc3xf5AkDQDaDru5VJlOmn5j32aYguTGX68q6Ntv_lleFu4SBzysQESSchT2jhLvwPRDzMXVB6hz4cWuQk_OFRF5msjjwjOizjs1h9Fto3J-uvTrk5teB0n9LxFMC1WbOHC6NxU-CsMMqwMGHo7jitZKj4cmSOevB8RSbrjwl-2MmDBh59mBSn08h6ONwKCJ3AGf6cDwSJk3QpSdXpm6saPCWhv7sk0VeRx9kD3PWdG37Ys3TcLks1nMWpTApHh55XQsKbDV_ih_kJA2G5IEkFOwQL_PQ=w1197-h572-no?authuser=0" alt="JuveR" width="700px" >
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+##### Menú usuario:
 
-## Laravel Sponsors
+###### Cuando un usuario con el rol "usuario" ingresa a su cuenta, únicamente podrá visualizar este menú y buscar un producto mediante su código de barra. 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+<img src ="https://lh3.googleusercontent.com/EvObKGwA3sa1zmFdOWZWCqze2rt2dqcdVnbXW4A0J3a67iqFYup-_ghclGBMr2I9QvFjszGjzaXr33aqNLSelx4xYIB1TEY7Pja18R8H64JkqU3Doy8qdhoCFOnYsq5R1-H0E9JZxmxC31GbUIUWKaQ2TrQ0BHxyLWzBx6xjmG_Tp0TFj0GwPxye2CYGadx4O1Kt6pn8zk2Ngdpxc_4E3MHeDsQR2ubPbDGPv-2xhCh1vht_cPjVId7iq-p7-sa0Brs914i5LKr6ahLpyCEYN6CZXGtJBPYMQW8gK485f-nv9iw_16WAl2XNJdE-k7aeqRlmA0TSzo4zrc8KeaXaqt6b-2r6p3wFhq9VCdq_Vjpqo32EKLjhCLKgB5GnWBiQBkceFUJmnkG39ci6eGMy5kNyRUrDVNfUSKOGGQftvrPXOHSRcgZ0sNj_PxpNr0zwJ2P7gOQTjVrN8NDKjH6VtZDjB63RUGh-I1i8Cgb87ssrG5zghwa59VrS72WKl8zKesW5GHHTIAxETURsVhEiW4nI75X1xcf9Q9N_CEKGO8c2KtB1Y1icw-xOO-aawe77VXfK3T6nAapgQvJE6ICzIrFQJAYhUnqXXol3su12oA-A6cwizI-JNvvqvyEHfJv3rR_wP6Rn04IOZGNjEqeJkKEgDxJ0Fn7RJ9pPMS785XjXCGfjF6ZgS-LOjmVatEhY68SPuEenqIYqQPPVuOBl-e-lpjMcpS205IzqLwlbOTJlMSjTSsbTAOpA5Fjk=w1197-h572-no?authuser=0" alt="JuveR" width="700px" >
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+##### Menú administrador:
 
-## Contributing
+###### Cuando un administrador accede al sistema, podrá agregar un producto o solicitar la asignación de un producto hacia el área correspondiente. 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img src= "https://lh3.googleusercontent.com/hbtBpsdySaXXUkI5tJ7tiu6HoHbehle86D7A8l__YvlWmL0tsoH-XJS_9CuINtHz1WSngFz2m4BVB35Osio6OsTECqY6PCV5yJlrwtqxZcBcviUvhSfSI8va3R9oVJJFBQM49wcEWdL4SQpDbbJFccs92gmqE3FGc4z3jNQiXmesOg-Mr3rZfMaFlqAljOpjeNYrojFcnxTCaoSyqu74iIAZcgsS23ySVnh3SMZMApMmb0-kox7Hk21soEZO5_RgtXiCsp6uihvWpjR28zkTpRIem7fHdULSLIII7GpVPPKADO0n-Yl5BfSyaFoX2xRqeS0BsxLL2wh0wIqj970r-jRfp0I0Yh6EeVI417Nmwv5sLsprq8F1TDYdv8NoNrZfKcdXvFhTLoiJIBeCq1d6uAdWZz68GXLy-jnHQmGBSPKgUi3r0WOKXpB7bPlXd_NflhqSxH1Ex3Op5gUpx0Kt4sjuNM3Cywh5rtA7LlotFeq3yj2llRTwRMxb2fk6LyuzQcwdUUDtU1gFoaQ3-a3r4uBa7xypw91VZOYZO22BbDb8vo1lGerfjg2KCMrtZFwIAsRFVE6ORm3qCL_-i4vfCWq1WHQ6AboGxd2i-1GLGpqy53dhO2YpJFPHy-c4RZNjSE7kFhA4c3OYbNPsI2OqUAsfeEDHahZS_Z8tQtYzPpPcvDyj4-403cXLzFSVX5azuAlMoSPXDwRVnutlCnL7Vlw_oHughrarNz6yrdJJlLCTQ1ldJhwAl5EEYHvd=w1197-h572-no?authuser=0" alt="JuveR" width="700px" >
 
-## Code of Conduct
+##### Menú jefe:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+###### Las cuentas con el rol jefe podrán visualizar todos los productos y el nombre de la persona que agrego el producto, también asignara roles a las cuentas que se hayan creado.
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<img src="https://lh3.googleusercontent.com/oBhrYCedNfulg0M4ztTmpUOoqtzZMffjoe0RzYWzy4O1np77a6Xnq1MytdlbA2iaxmXuJ0rlih87PQ8g_5w9NxTEMNGZ-LnZ1IxGp_DykiEXk5RySl2_OB54Rur-gyzML3ukkrfX0RxMBEw4sVNDerK7E10-A4dE85Wx_kiP6Pu7lOjgyvO-Wg6p0yilqegSjQO995tMDG0aFUr8TTqbbckC8hH3-I0kw1_v4QfMpsApdzDM6r3xTbf90fam_mqKjXvuqdHcDqBgLO48f6Xdm6MVbbha-8KM8_AaWCaTM6jGa02kFntArhKlaAqTt3PHaozRx2NRmwJOYa31dCSTts6aF0vmcAOWYPlpmhCYFilzAYOdEXU4fVA3GUoQEVQDDE3jddEOKd442_6JPv0G5aZWWfvAdkDotBURuXJEJFMD295De4QYPc7mI12mtcUZ54oS6Q1UL-Wvdx4hza_ESNOV4RTk65ePYD0UJb4XRcn6cIDUFMbFVpiFViozfLjz-wvZk29gMO2c0OBzH9IMlRjyq3cu7qGcDOj9sG7ItwSfnPENZDiRz1px5qGj1-3YfP1FU7zdvjV7Qg_4BjJrc8GnlOvg6l5zTDUPoHQbPozWnBGu0OKCsgHpocq7UsShKcsQqnK4FVOkR0T_5TO6lFK0nlB392ZlcMUBwiNcN18grQtbzqeedUkKzMaW8aMnCDrSUq3ymNyEKk1m5cIJ5vA5D61VG6h8T7xKkfzI4tvS20N2gpljbzgVUN9h=w1197-h572-no?authuser=0" alt="JuveR" width="700px" >
